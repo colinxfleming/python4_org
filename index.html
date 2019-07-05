@@ -10,24 +10,13 @@
       background-image: url(assets/stars.gif);
     }
 
+    /*Styling*/
     .hed {
       font-size: 60px;
     }
 
     .txt {
       font-size: 30px;
-    }
-
-    .container {
-      margin-left: 5%;
-    }
-
-    .snakes {
-      display: grid;
-      grid-template-columns: 5% 30% 30% 10%;
-      grid-row-gap: 5px;
-      grid-column-gap: 10px;
-      margin-bottom: 20px;
     }
 
     .picture-of-snake {
@@ -40,11 +29,6 @@
        -webkit-transform: scaleX(-1);
     }
 
-    .audio-controller {
-      margin-top: 20px;
-      float: right;
-    }
-
     a, a:visited, a:hover {
       color: gray;
     }
@@ -52,10 +36,29 @@
     a:active {
       color: white;
     }
+
+    /*Spacing and grid*/
+    .container {
+      margin-left: 5%;
+    }
+
+    .snakes {
+      display: grid;
+      grid-template-columns: 5% 30% 30%;
+      grid-row-gap: 5px;
+      grid-column-gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .footer {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-column-gap: 5%;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="container layout-grid">
     <div class="header">
       <h1 class="hed">PEP 599: Python 4 New Features</h1>
     </div>
@@ -71,12 +74,10 @@
       <span></span>
       <img class="picture-of-snake" src="assets/snek-elegant.jpg" alt="snake looking elegant">
       <img class="picture-of-snake" src="assets/snek-brave.jpg" alt="snake looking brave">
-      <span></span>
 
       <span></span>
       <img class="picture-of-snake" src="assets/snek-centered.jpg" alt="snake looking centered">
       <img class="picture-of-snake" src="assets/snek-closeup.jpg" alt="snake ready for closeup">
-      <span></span>
     </div>
 
     <div class="footer">
@@ -92,11 +93,11 @@
         snake pictures from <a href="https://www.flickr.com/photos/152742755@N04">here</a> (via Creative Commons)
       </div>
 
-      <!-- <div class="muzak">
+      <div class="muzak">
         <audio controls src="assets/gnr.mid">
           (This is Sweet Child O'Mine by GNR)
         </audio>        
-      </div> -->
+      </div>
     </div>
   </div>
 
