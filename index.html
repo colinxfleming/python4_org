@@ -10,6 +10,14 @@
       background-image: url(stars.gif);
     }
 
+    .hed {
+      font-size: 60px;
+    }
+
+    .txt {
+      font-size: 30px;
+    }
+
     .container {
       margin-left: 5%;
     }
@@ -19,6 +27,7 @@
       grid-template-columns: 5% 30% 30% 10%;
       grid-row-gap: 5px;
       grid-column-gap: 10px;
+      margin-bottom: 20px;
     }
 
     .picture-of-snake {
@@ -26,35 +35,68 @@
       width: 100%;
     }
 
+    .img-flip {
+       transform: scaleX(-1);
+       -webkit-transform: scaleX(-1);
+    }
+
     .audio-controller {
       margin-top: 20px;
       float: right;
+    }
+
+    a, a:visited, a:hover {
+      color: gray;
+    }
+
+    a:active {
+      color: white;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Python 4: New Features</h1>
-    <ul>
-      <li>Four pictures of snakes</li>
-    </ul>
+    <div class="header">
+      <h1 class="hed">PEP 599: Python 4 New Features</h1>
+    </div>
+
+    <div class="content">
+      <ul>
+        <li class="txt">Statements must now terminate with semicolons</li>
+        <li class="txt">Four all-new pictures of snakes</li>
+      </ul>
+    </div>
 
     <div class="snakes">
       <span></span>
-      <img class="picture-of-snake" src="snek-up.jpg" alt="snek-up">
-      <img class="picture-of-snake" src="snek-down.jpg" alt="snek-down">
+      <img class="picture-of-snake" src="snek-elegant.jpg" alt="snake looking elegant">
+      <img class="picture-of-snake" src="snek-brave.jpg" alt="snake looking brave">
       <span></span>
 
       <span></span>
-      <img class="picture-of-snake" src="snek-up.jpg" alt="snek-up">
-      <img class="picture-of-snake" src="snek-down.jpg" alt="snek-down">
+      <img class="picture-of-snake" src="snek-centered.jpg" alt="snake looking centered">
+      <img class="picture-of-snake" src="snek-closeup.jpg" alt="snake ready for closeup">
       <span></span>
     </div>
 
-    <div class="audio-controller">
-      <audio controls src="gnr.mid">
-        (This is Sweet Child O'Mine by GNR)
-      </audio>
+    <div class="footer">
+      <div class="creator-info">
+        made by <a href="https://github.com/colinxfleming">Colin</a>
+      </div>
+
+      <div class="joke-info">
+        thank you <a href="https://github.com/vcj">Vicky</a> for this incredible joke
+      </div>
+      
+      <div class="snake-picture-info">
+        snake pictures from <a href="https://www.flickr.com/photos/152742755@N04">here</a> (via Creative Commons)
+      </div>
+
+      <div class="muzak">
+        <audio controls src="gnr.mid">
+          (This is Sweet Child O'Mine by GNR)
+        </audio>        
+      </div>
     </div>
   </div>
 </body>
