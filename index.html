@@ -99,5 +99,19 @@
       </div>
     </div>
   </div>
+
+  <script>
+    var flip = function() {
+      var pictures = document.getElementsByClassName('picture-of-snake');
+      for (i = 1; i <= pictures.length; i++) {
+        pictures.item(i - 1).classList.toggle('img-flip');
+      }
+    }
+    
+    setInterval(function() {
+      flip();
+    }, 1000);
+  </script>
 </body>
 </html>
+
