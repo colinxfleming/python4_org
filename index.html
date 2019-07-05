@@ -9,21 +9,53 @@
       background-color: black;
       background-image: url(stars.gif);
     }
+
+    .container {
+      margin-left: 5%;
+    }
+
+    .snakes {
+      display: grid;
+      grid-template-columns: 5% 30% 30% 10%;
+      grid-row-gap: 5px;
+      grid-column-gap: 10px;
+    }
+
+    .picture-of-snake {
+      height: 100%;
+      width: 100%;
+    }
+
+    .audio-controller {
+      margin-top: 20px;
+      float: right;
+    }
   </style>
 </head>
 <body>
-  <h1>Python 4: New Features</h1>
-  <ul>
-    <li>Four pictures of snakes</li>
-  </ul>
+  <div class="container">
+    <h1>Python 4: New Features</h1>
+    <ul>
+      <li>Four pictures of snakes</li>
+    </ul>
 
-  <img src="snek-up.jpg" alt="snek-up">
-  <img src="snek-down.jpg" alt="snek-down">
+    <div class="snakes">
+      <span></span>
+      <img class="picture-of-snake" src="snek-up.jpg" alt="snek-up">
+      <img class="picture-of-snake" src="snek-down.jpg" alt="snek-down">
+      <span></span>
 
-  <div class="audio-controller">
-    <audio controls src="gnr.mid">
-      (This is Sweet Child O'Mine by GNR)
-    </audio>
+      <span></span>
+      <img class="picture-of-snake" src="snek-up.jpg" alt="snek-up">
+      <img class="picture-of-snake" src="snek-down.jpg" alt="snek-down">
+      <span></span>
+    </div>
+
+    <div class="audio-controller">
+      <audio controls src="gnr.mid">
+        (This is Sweet Child O'Mine by GNR)
+      </audio>
+    </div>
   </div>
 </body>
 </html>
